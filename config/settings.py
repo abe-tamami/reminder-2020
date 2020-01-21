@@ -34,7 +34,7 @@ if not DEBUG:
     import django_heroku
     django_heroku.settings(locals())
 
-ALLOWED_HOSTS = ["mylanban.herokuapp.com"]
+ALLOWED_HOSTS = ["mreminder-2020.com"]
 
 
 # Application definition
