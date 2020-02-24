@@ -14,6 +14,7 @@ from . models import List, Card
 def index(request):
     return render(request, "kanban/index.html")
 
+
 class HomeView(LoginRequiredMixin, ListView):
     model = List
     template_name = "kanban/home.html"

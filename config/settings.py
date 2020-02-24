@@ -34,7 +34,7 @@ if not DEBUG:
     import django_heroku
     django_heroku.settings(locals())
 
-ALLOWED_HOSTS = ["mreminder-2020.com"]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -129,6 +129,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+import os
+PROJECT_ROOT = os.path.dirname(os.path.abspath(_file_))
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
@@ -152,3 +154,5 @@ except ImportError:
 if not DEBUG:
     import django_heroku
     django_heroku.settings(locals())
+
+DEBUD = True
